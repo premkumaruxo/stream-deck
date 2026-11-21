@@ -1,0 +1,47 @@
+{
+  "protocol_version": 1,
+  "websocket_port": 8765,
+  "discovery_port": 39394,
+  "messages": {
+    "discovery": {
+      "type": "streamdeck_pc",
+      "name": "Windows hostname",
+      "port": 8765,
+      "companion_id": "stable companion identifier",
+      "protocol_version": 1
+    },
+    "pair_request": {"type": "pair_request", "device": "Android device name"},
+    "paired": {"type": "paired", "token": "one-time generated device token"},
+    "authenticate": {"type": "authenticate", "token": "previously paired token"},
+    "authenticated": {"type": "authenticated"},
+    "command": {
+      "type": "keyboard | mouse | media | system | launch_app | open_url",
+      "key": "allowlisted action identifier or HTTP(S) URL",
+      "request_id": "optional client-generated correlation id"
+    },
+    "command_result": {
+      "type": "command_result",
+      "ok": true,
+      "request_id": "echoed client correlation id"
+    },
+    "error": {
+      "type": "error",
+      "message": "safe failure description",
+      "request_id": "echoed client correlation id when present"
+    }
+  },
+  "allowed_actions": {
+    "keyboard": "CTRL+S-style shortcut from the companion allowlist",
+    "mouse": ["left_click", "right_click", "double_click", "middle_click", "scroll_up", "scroll_down"],
+    "media": ["play_pause", "previous", "next", "volume_up", "volume_down", "mute"],
+    "system": ["screenshot", "lock", "task_manager", "open_settings", "file_explorer"],
+    "launch_app": ["premiere_pro", "photoshop", "after_effects", "resolve", "obs", "chrome", "file_explorer"],
+    "open_url": "HTTP(S) URLs without embedded credentials"
+  },
+  "security": {
+    "pairing_requires_local_user_confirmation": true,
+    "tokens_are_per_device": true,
+    "arbitrary_shell_commands_are_never_accepted": true,
+    "unencrypted_websocket_is_limited_to_trusted_local_networks": true
+  }
+}

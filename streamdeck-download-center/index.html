@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Download Stream Deck for Android and Windows.">
+  <title>Stream Deck Download Center</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <style>
+    :root{--bg:#f7f8fb;--surface:#fff;--surface-2:#f1f3f8;--text:#171a23;--muted:#697184;--line:#e3e6ef;--dark:#111827;--accent:#6f7eeb;--accent-dark:#5364d8;--radius:22px;--shadow:0 18px 50px rgba(24,32,56,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}button,a{-webkit-tap-highlight-color:transparent}img,svg{display:block}.container{width:min(1120px,calc(100% - 40px));margin-inline:auto}.nav{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(227,230,239,.8);background:rgba(247,248,251,.88);backdrop-filter:blur(18px)}.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.02em}.brand img{width:38px;height:38px}.nav-links{display:flex;align-items:center;gap:28px}.nav-links a{font-size:.94rem;font-weight:650;color:#555d70}.nav-links a:hover{color:var(--text)}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-weight:750;transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease;cursor:pointer}.button:hover{transform:translateY(-2px);border-color:#bfc5d5;box-shadow:0 10px 24px rgba(24,32,56,.08)}.button:active{transform:translateY(0) scale(.98)}.button:focus-visible,.nav-toggle:focus-visible,.faq-question:focus-visible{outline:3px solid rgba(111,126,235,.32);outline-offset:3px}.button-primary{color:#fff;border-color:var(--dark);background:var(--dark)}.button-primary:hover{border-color:#252f43;background:#252f43}.nav-toggle{display:none;border:0;background:transparent;width:44px;height:44px;border-radius:10px}.hero{padding:92px 0 70px}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:70px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent-dark);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}h1{margin:16px 0 20px;font-size:clamp(3rem,7vw,5.8rem);line-height:.98;letter-spacing:-.065em}h1 span{color:var(--muted)}.hero-copy{max-width:610px;color:var(--muted);font-size:1.12rem}.hero-actions{display:flex;gap:12px;margin-top:30px}.icon-platform{width:20px;height:20px}.hero-visual{min-height:420px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(145deg,#fff,#edf0f7);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}.deck-preview{width:310px;padding:22px;border-radius:24px;background:#171b27;box-shadow:0 24px 50px rgba(17,24,39,.23)}.deck-screen{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.deck-key{aspect-ratio:1;border:1px solid rgba(255,255,255,.09);border-radius:12px;background:#252a38;box-shadow:inset 0 1px rgba(255,255,255,.06)}.deck-key.active{background:var(--accent);box-shadow:0 0 22px rgba(111,126,235,.32)}section{scroll-margin-top:90px}.section{padding:78px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:34px}.section-head h2{margin:8px 0 0;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.045em}.section-head p{max-width:520px;color:var(--muted);margin:0}.download-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.download-card{border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.82);padding:28px;box-shadow:0 12px 35px rgba(24,32,56,.04)}.card-top{display:flex;align-items:center;gap:15px}.platform-logo{width:54px;height:54px;border-radius:14px;background:var(--surface-2);display:grid;place-items:center}.platform-logo svg{width:28px;height:28px}.download-card h3{margin:0;font-size:1.25rem}.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.pill{padding:5px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:.78rem;font-weight:750}.download-card p{color:var(--muted);min-height:52px}.download-card .button{width:100%;margin-top:12px}.update-box{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.update-main,.release-panel{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:28px}.status{display:inline-flex;padding:7px 11px;border-radius:999px;background:#edf8f1;color:#26704a;font-size:.82rem;font-weight:800}.status.outdated{background:#eef0ff;color:#5364d8}.version-line{display:flex;gap:28px;margin:22px 0}.version-line strong{display:block;font-size:1.5rem}.version-line span{color:var(--muted);font-size:.82rem}.release-list{display:grid;gap:10px}.release-item{border-top:1px solid var(--line);padding:14px 0}.release-item:first-child{border-top:0}.release-item strong{display:block}.release-item span{color:var(--muted);font-size:.82rem}.release-item ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature-card{min-height:170px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.feature-icon{width:42px;height:42px;border-radius:12px;background:var(--surface-2);display:grid;place-items:center;margin-bottom:24px}.feature-icon svg{width:21px;height:21px}.feature-card h3{margin:0 0 5px;font-size:1rem}.feature-card p{margin:0;color:var(--muted);font-size:.91rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{position:relative;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:24px}.step-number{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:#fff;font-weight:800}.step h3{margin:18px 0 6px}.step p{margin:0;color:var(--muted);font-size:.92rem}.guide-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.guide-card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--surface)}.guide-card ol{margin:18px 0 0;padding-left:20px}.guide-card li{padding:5px 0}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-question{width:100%;border:0;background:transparent;color:var(--text);padding:20px 44px 20px 0;text-align:left;font:700 1rem Inter,"Segoe UI",Arial,sans-serif;position:relative;cursor:pointer}.faq-question:after{content:"+";position:absolute;right:12px;top:17px;font-size:1.35rem;color:var(--muted)}.faq-question[aria-expanded="true"]:after{content:"−"}.faq-answer{max-height:0;overflow:hidden;color:var(--muted);transition:max-height .24s ease}.faq-answer p{margin:0 0 20px}.footer{border-top:1px solid var(--line);padding:38px 0}.footer-inner{display:flex;justify-content:space-between;gap:24px}.footer-links{display:flex;flex-wrap:wrap;gap:18px;color:var(--muted);font-size:.88rem}.error-box{border:1px solid #edbfc2;background:#fff6f6;color:#8b3037;border-radius:14px;padding:18px}.placeholder-link{opacity:.72}.menu-open-nav{display:flex}.fade-in{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}.fade-in.visible{opacity:1;transform:none}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:340px}.download-grid,.update-box,.guide-grid{grid-template-columns:1fr}.features-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:680px){.container{width:min(100% - 28px,1120px)}.nav-toggle{display:grid;place-items:center}.nav-links{display:none;position:fixed;inset:72px 0 auto;padding:18px 14px 24px;border-bottom:1px solid var(--line);background:rgba(247,248,251,.98);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links a,.nav-links .button{padding:12px}.hero{padding:58px 0 48px}.hero-grid{gap:36px}.hero-actions{flex-direction:column}.hero-actions .button{width:100%}.hero-visual{min-height:300px}.deck-preview{width:min(280px,82%)}.section{padding:58px 0}.section-head{align-items:start;flex-direction:column}.features-grid,.steps{grid-template-columns:1fr}.footer-inner{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="Stream Deck home"><img src="./assets/logo.svg" alt=""><span>Stream Deck</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#download">Download</a><a href="#updates">Updates</a><a href="#features">Features</a><a href="#guide">Guide</a>
+        <a class="button button-primary" href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Remote PC control</div>
+          <h1>Stream Deck <span>for Android &amp; Windows</span></h1>
+          <p class="hero-copy">Turn your Android phone into a premium remote control for your Windows PC through the Stream Deck Windows Companion.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="hero-android" href="#download"><svg class="icon-platform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M10 6h4M11 18h2"/></svg>Download Android <span id="hero-android-version"></span></a>
+            <a class="button" id="hero-windows" href="#download"><svg class="icon-platform" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5l8-1v7H3V5zm9-1.2l9-1.3V11h-9V3.8zM3 12h8v7l-8-1v-6zm9 0h9v8.5l-9-1.3V12z"/></svg>Download Windows <span id="hero-windows-version"></span></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Stream Deck control panel preview">
+          <div class="deck-preview"><div class="deck-screen">
+            <div class="deck-key"></div><div class="deck-key"></div><div class="deck-key active"></div>
+            <div class="deck-key"></div><div class="deck-key active"></div><div class="deck-key"></div>
+            <div class="deck-key"></div><div class="deck-key"></div><div class="deck-key"></div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="download">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Downloads</div><h2>Choose your platform</h2></div></div>
+        <div id="load-error"></div>
+        <div class="download-grid">
+          <article class="download-card">
+            <div class="card-top"><div class="platform-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M11 19h2"/></svg></div><h3>Stream Deck Android</h3></div>
+            <div class="meta-row"><span class="pill" id="android-version">Version loading</span><span class="pill" id="android-code">Version code loading</span><span class="pill" id="android-date">Release date loading</span><span class="pill" id="android-size">Size loading</span></div>
+            <p>Use custom buttons, shortcuts, media controls and PC actions directly from your Android device.</p>
+            <a class="button" id="android-download" href="#" aria-disabled="true">Download APK</a>
+          </article>
+          <article class="download-card">
+            <div class="card-top"><div class="platform-logo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5l8-1v7H3V5zm9-1.2l9-1.3V11h-9V3.8zM3 12h8v7l-8-1v-6zm9 0h9v8.5l-9-1.3V12z"/></svg></div><h3>Stream Deck Windows Companion</h3></div>
+            <div class="meta-row"><span class="pill" id="windows-version">Version loading</span><span class="pill" id="windows-date">Release date loading</span><span class="pill" id="windows-size">Size loading</span></div>
+            <p>Keep the lightweight Companion running on Windows to receive pairing requests and control actions.</p>
+            <a class="button" id="windows-download" href="#" aria-disabled="true">Download for Windows</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="updates">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Update Center</div><h2>Latest release</h2></div></div>
+        <div class="update-box">
+          <div class="update-main"><span class="status" id="update-status">Checking release data</span><div class="version-line"><div><span>Current version</span><strong id="current-version">1.0.0</strong></div><div><span>Latest version</span><strong id="latest-version">Loading</strong></div></div><a class="button button-primary" id="update-download" href="#download">Download Update</a></div>
+          <div class="release-panel"><h3>Release notes</h3><div id="release-notes"></div></div>
+        </div>
+        <div class="section-head" style="margin-top:58px"><div><div class="eyebrow">Release history</div><h2>Previous releases</h2></div></div>
+        <div class="release-list" id="release-history"></div>
+      </div>
+    </section>
+    <section class="section" id="features">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">Features</div><h2>Control with confidence</h2></div><p>A focused remote-control experience built around the actions you use most.</p></div>
+        <div class="features-grid">
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div><h3>Remote PC control</h3><p>Control your Windows PC over the local network.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></div><h3>Custom Stream Deck buttons</h3><p>Create a control layout that fits your workflow.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h2M11 9h2M16 9h2M6 13h12"/></svg></div><h3>Keyboard shortcuts</h3><p>Send practical shortcuts and multi-key commands.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="7"/><path d="M12 7v4"/></svg></div><h3>Mouse and PC controls</h3><p>Use clicks, scrolling and system actions remotely.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4V8z"/></svg></div><h3>Media controls</h3><p>Play, pause, skip tracks and adjust volume.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="8" cy="12" r="2"/><path d="M13 10h5M13 14h3"/></svg></div><h3>Custom icons</h3><p>Personalize buttons with your own visual identity.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Button customization</h3><p>Arrange and configure controls for each task.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg></div><h3>Windows Companion</h3><p>A lightweight local agent for secure PC actions.</p></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 10-2.34 5.66M20 12V6m0 6h-6"/></svg></div><h3>Automatic reconnect</h3><p>Re-establish local connections without starting over.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="how">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">How it works</div><h2>Set up in three steps</h2></div></div><div class="steps">
+        <article class="step"><div class="step-number">1</div><h3>Install Stream Deck Android</h3><p>Download the APK and install it on your Android device.</p></article>
+        <article class="step"><div class="step-number">2</div><h3>Install Windows Companion</h3><p>Run the Companion on the Windows PC you want to control.</p></article>
+        <article class="step"><div class="step-number">3</div><h3>Pair both devices</h3><p>Connect to the same Wi-Fi network, discover the PC and approve the pairing.</p></article>
+      </div></div>
+    </section>
+    <section class="section" id="guide">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">Installation guide</div><h2>Get connected</h2></div></div><div class="guide-grid">
+        <article class="guide-card"><h3>Android</h3><ol><li>Download the APK.</li><li>Install the APK.</li><li>Open Stream Deck.</li><li>Allow required permissions if requested.</li></ol></article>
+        <article class="guide-card"><h3>Windows</h3><ol><li>Download Windows Companion.</li><li>Install or run it.</li><li>Keep Companion running.</li><li>Open Stream Deck on Android.</li><li>Pair the device on the same local network.</li></ol></article>
+      </div></div>
+    </section>
+    <section class="section" id="faq">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">FAQ</div><h2>Common questions</h2></div></div><div class="faq-list">
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">Do I need to pair again every time?</button><div class="faq-answer"><p>Paired devices remain trusted. Automatic reconnect is used when both applications are available on the local network.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">Does the Windows Companion need to be running?</button><div class="faq-answer"><p>Yes. The Android app requires the Windows Companion to receive control actions from the PC.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">Can I update Android without losing buttons or settings?</button><div class="faq-answer"><p>Updating an installed app normally preserves its local database and preferences when it is signed with the same release key.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">Does the Android app work without Windows Companion?</button><div class="faq-answer"><p>No. Stream Deck communicates with the Companion to execute actions on the Windows PC.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">Can I use multiple Android devices?</button><div class="faq-answer"><p>Yes. Each Android device can be paired separately and receives its own pairing token.</p></div></div>
+      </div></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#"><img src="./assets/logo.svg" alt=""><span>Stream Deck</span></a><div class="footer-links"><a href="#download">Android</a><a href="#download">Windows</a><a href="#download">Download</a><a href="#updates">Updates</a><a href="#faq">Support</a><span id="footer-version">Version loading</span></div></div></footer>
+  <script>
+    const $=(selector)=>document.querySelector(selector);
+    const navToggle=$(".nav-toggle"),navLinks=$(".nav-links");
+    navToggle.addEventListener("click",()=>{const open=navLinks.classList.toggle("open");navToggle.setAttribute("aria-expanded",String(open));document.body.classList.toggle("menu-open",open)});
+    navLinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{navLinks.classList.remove("open");navToggle.setAttribute("aria-expanded","false");document.body.classList.remove("menu-open")}));
+    document.querySelectorAll(".faq-question").forEach(button=>button.addEventListener("click",()=>{const expanded=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",String(!expanded));const answer=button.nextElementSibling;answer.style.maxHeight=expanded?"0":answer.scrollHeight+"px"}));
+    const placeholderUrl=url=>typeof url==="string"&&url.includes("GITHUB_USERNAME");
+    function configureLink(id,url,label){const link=$(id);if(!url||placeholderUrl(url)){link.href="#";link.classList.add("placeholder-link");link.setAttribute("aria-disabled","true");link.title="Replace the placeholder download URL in latest.json";return}link.href=url;link.removeAttribute("aria-disabled");link.classList.remove("placeholder-link")}
+    function isNewer(latest,current){const a=latest.split(".").map(Number),b=current.split(".").map(Number);for(let i=0;i<Math.max(a.length,b.length);i++){if((a[i]||0)>(b[i]||0))return true;if((a[i]||0)<(b[i]||0))return false}return false}
+    function formatReleaseDate(value){if(!value)return "Release date unavailable";const date=new Date(value+"T00:00:00");if(Number.isNaN(date.getTime()))return value;return new Intl.DateTimeFormat(undefined,{day:"numeric",month:"short",year:"numeric"}).format(date)}
+    async function loadRelease(){
+      const releaseUrl=new URL("./latest.json",window.location.href);
+      releaseUrl.searchParams.set("_",String(Date.now()));
+      console.info("[Stream Deck] Loading release metadata from",releaseUrl.href);
+      try{
+        const response=await fetch(releaseUrl.href,{cache:"no-store",headers:{Accept:"application/json"}});
+        if(!response.ok){
+          let responseText="";
+          try{responseText=await response.text()}catch(_){}
+          throw new Error(`latest.json returned HTTP ${response.status} ${response.statusText}${responseText?`: ${responseText.slice(0,200)}`:""}`);
+        }
+        let data;
+        try{data=await response.json()}
+        catch(error){throw new Error(`latest.json contains invalid JSON: ${error.message}`)}
+        if(!data||typeof data!=="object"||!data.android||typeof data.android!=="object"||!data.windows||typeof data.windows!=="object"){
+          throw new Error("latest.json is missing required android or windows objects");
+        }
+        const android=data.android,windows=data.windows;
+        $("#android-version").textContent=android.version?"Version "+android.version:"Version unavailable";
+        $("#android-code").textContent="Version code "+(android.versionCode||"unavailable");
+        $("#android-date").textContent=formatReleaseDate(android.releaseDate);
+        $("#android-size").textContent=android.size||"Size unavailable";
+        $("#windows-version").textContent=windows.version?"Version "+windows.version:"Version unavailable";
+        $("#windows-date").textContent=formatReleaseDate(windows.releaseDate);
+        $("#windows-size").textContent=windows.size||"Size unavailable";
+        $("#hero-android-version").textContent=android.version?"v"+android.version:"";
+        $("#hero-windows-version").textContent=windows.version?"v"+windows.version:"";
+        $("#latest-version").textContent=android.version||"Unavailable";
+        $("#footer-version").textContent=android.version?"Version "+android.version:"Version unavailable";
+        configureLink("#android-download",android.downloadUrl,"Download APK");
+        configureLink("#windows-download",windows.downloadUrl,"Download for Windows");
+        configureLink("#hero-android",android.downloadUrl,"Download Android");
+        configureLink("#hero-windows",windows.downloadUrl,"Download Windows");
+        configureLink("#update-download",android.downloadUrl,"Download Update");
+        const latestStatus=$("#update-status"),outdated=isNewer(android.version||"0","1.0.0");
+        latestStatus.textContent=outdated?"New update available":"You're using the latest version.";
+        latestStatus.classList.toggle("outdated",outdated);
+        $("#release-notes").innerHTML=(Array.isArray(android.releaseNotes)?android.releaseNotes:[]).map(note=>"<p>"+escapeHtml(note)+"</p>").join("")||"<p>No release notes provided.</p>";
+        const history=$("#release-history");
+        history.innerHTML=(Array.isArray(data.releases)?data.releases:[]).map(release=>'<article class="release-item"><strong>Version '+escapeHtml(release.version||"Unknown")+'</strong><span>'+escapeHtml(formatReleaseDate(release.date))+'</span><ul>'+ (Array.isArray(release.changes)?release.changes:[]).map(change=>"<li>"+escapeHtml(change)+"</li>").join("")+"</ul></article>").join("")||"<p>No previous releases published.</p>";
+        console.info("[Stream Deck] Release metadata loaded successfully",data);
+      }catch(error){
+        console.error("[Stream Deck] Failed to load release metadata:",releaseUrl.href,error);
+        const message=document.createElement("div");
+        message.className="error-box";
+        message.textContent="Release data could not be loaded. Please refresh or check latest.json. Live Server/HTTP hosting is required.";
+        $("#load-error").appendChild(message);
+        $("#android-version").textContent="Version unavailable";
+        $("#android-code").textContent="Version code unavailable";
+        $("#android-date").textContent="Release date unavailable";
+        $("#android-size").textContent="Size unavailable";
+        $("#windows-version").textContent="Version unavailable";
+        $("#windows-date").textContent="Release date unavailable";
+        $("#windows-size").textContent="Size unavailable";
+        $("#latest-version").textContent="Unavailable";
+        $("#footer-version").textContent="Version unavailable";
+        ["#android-download","#windows-download","#hero-android","#hero-windows","#update-download"].forEach(id=>configureLink(id,"","Unavailable"));
+        $("#update-status").textContent="Release information unavailable";
+      }
+    }
+    function escapeHtml(value){const div=document.createElement("div");div.textContent=String(value);return div.innerHTML}
+    loadRelease();
+  </script>
+</body>
+</html>

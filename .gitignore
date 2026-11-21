@@ -1,0 +1,37 @@
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+windows-companion/.venv/
+windows-companion/__pycache__/
+windows-companion/*.py[cod]
+*.log
+*.tmp
+
+# Android release signing
+*.jks
+*.keystore
+*.p12
+*.pfx
+**/signing.properties
+**/release-signing.properties
+**/local-secrets.properties
+**/secrets.properties
+
+# Private keys and certificates
+*.key
+*.pem
+*.crt
+*.cer
+
+# Credentials and service accounts
+credentials*.json
+secrets*.json
+service-account*.json
+firebase-adminsdk*.json
+
+# Environment secrets
+.env
+.env.*
+!.env.example
